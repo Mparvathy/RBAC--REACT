@@ -1,3 +1,5 @@
+Using the React RaBC user interface, my project has three users: an administrator, a user, and a manager. The administrator can add, delete, or edit users, and the manager can add tasks. Users can view their profiles and completed tasks.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
