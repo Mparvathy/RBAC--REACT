@@ -1,0 +1,82 @@
+/* AdminDashboard.css */
+
+/* Overall container */
+.admin-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Dashboard content */
+  .dashboard-content {
+    padding: 20px;
+    margin-left: 200px; /* To ensure content is not hidden behind the sidebar */
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  /* Title */
+  .dashboard-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Description */
+  .dashboard-description {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 768px) {
+    .dashboard-content {
+      margin-left: 0; /* Remove left margin on mobile */
+    }
+  }
+  /* AdminDashboard.css */
+
+/* Overall container */
+.admin-dashboard-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Dashboard content */
+.dashboard-content {
+  padding: 20px;
+  margin-left: 200px; /* To ensure content is not hidden behind the sidebar */
+  background-color: #f9f9f9;
+  min-height: 100vh;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+/* Title */
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Description */
+.dashboard-description {
+  font-size: 1.2rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .dashboard-content {
+    margin-left: 0; /* Remove left margin on mobile */
+  }
+}

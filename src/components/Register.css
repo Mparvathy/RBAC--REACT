@@ -1,0 +1,124 @@
+/* Register Container (Card Style) */
+.register-container {
+    background: #f9f9f9; /* Light gray background */
+    width: 100%;
+    max-width: 480px;
+    padding: 25px; /* Increased padding for a more spacious form */
+    border-radius: 12px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); /* Softer, more subtle shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px; /* Increased height for more space */
+    transition: all 0.3s ease-in-out;
+    background-color: #ffffff; /* White background for a clean look */
+}
+
+.register-container:hover {
+    transform: translateY(-8px); /* Subtle hover effect */
+}
+
+/* Heading */
+h2 {
+    font-size: 26px; /* Larger heading */
+    color: #2c3e50; /* Dark gray color for text */
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Form */
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Added gap between fields */
+}
+
+/* Input & Select Fields */
+input, select {
+    width: 90%;
+    padding: 12px; /* Slightly larger padding for more spacious feel */
+    margin: 8px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #bdc3c7; /* Light gray border */
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #ecf0f1; /* Light background for inputs */
+}
+
+input:focus, select:focus {
+    border-color: #1abc9c; /* New teal color for focus */
+    box-shadow: 0px 0px 12px rgba(26, 188, 156, 0.3); /* Subtle glow effect */
+}
+
+/* Label Styles */
+label {
+    width: 90%;
+    font-size: 16px;
+    font-weight: 600; /* Bolder text for labels */
+    color: #34495e; /* Slightly darker text for better readability */
+    margin-bottom: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #1abc9c; /* New teal color for the button */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: #16a085; /* Darker teal on hover */
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Responsive Adjustments for Mobile */
+@media (max-width: 600px) {
+    .register-container {
+        padding: 18px; /* Slightly reduced padding on smaller screens */
+        width: 100%; /* Full width on mobile */
+        min-height: 350px; /* Smaller minimum height */
+    }
+
+    h2 {
+        font-size: 22px; /* Smaller heading on mobile */
+        margin-bottom: 15px; /* Reduced space on mobile */
+    }
+
+    input, select {
+        padding: 10px; /* Adjusted padding for mobile */
+        font-size: 15px;
+        width: 95%; /* Larger input width on mobile */
+    }
+
+    button {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+/* Input & Select Fields */
+input, select {
+    width: 80%; /* Decreased width for input fields */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 2px solid #bdc3c7;
+    outline: none;
+    transition: border 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: #ecf0f1;
+    margin-left: -10px; /* Shift the input fields to the right */
+}
+
+input:focus, select:focus {
+    border-color: #1abc9c;
+    box-shadow: 0px 0px 12px rgba(26, 188, 156, 0.3);
+}

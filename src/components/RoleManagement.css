@@ -1,0 +1,174 @@
+/* General Styles */
+.role-management {
+  font-family: Arial, sans-serif;
+  padding: 20px; 
+  margin-left: 200px;
+  background-color: #f4f4f9;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2, h3 {
+  color: #333;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-left: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Table Styles */
+.user-table, .assigned-tasks-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.user-table th, .assigned-tasks-table th, .user-table td, .assigned-tasks-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.user-table th, .assigned-tasks-table th {
+  background-color: #f8f9fa;
+}
+
+.user-table td, .assigned-tasks-table td {
+  background-color: #fff;
+}
+
+.assigned-tasks-table td {
+  padding-left: 20px;
+}
+
+/* User Cards */
+.user-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.user-card {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.user-card p {
+  margin: 5px 0;
+}
+
+/* Task Assignment Form */
+.task-assignment {
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Task Actions */
+.assigned-tasks-table td button {
+  background-color: #28a745; /* Green for 'Mark as Completed' */
+}
+
+.assigned-tasks-table td button:hover {
+  background-color: #218838;
+}
+
+.assigned-tasks-table td button + button {
+  background-color: #ffc107; /* Yellow for 'Edit' */
+}
+
+.assigned-tasks-table td button + button:hover {
+  background-color: #e0a800;
+}
+
+.assigned-tasks-table td button + button + button {
+  background-color: #dc3545; /* Red for 'Delete' */
+}
+
+.assigned-tasks-table td button + button + button:hover {
+  background-color: #c82333;
+}
+
+/* Completion Status */
+.assigned-tasks-table td {
+  text-align: center;
+}
+
+.assigned-tasks-table td span {
+  font-weight: bold;
+}
+
+.assigned-tasks-table td span.completed {
+  color: green;
+}
+
+.assigned-tasks-table td span.incomplete {
+  color: red;
+}
+
+/* Edit Task Highlight */
+input[type="text"]:focus {
+  background-color: #f0f8ff;
+}
+
+/* Utility Styles */
+.text-center {
+  text-align: center;
+}
+
+.no-task {
+  color: #888;
+  font-style: italic;
+}
+
+button.remove-task {
+  background-color: #dc3545; /* Red for 'Remove Task' */
+}
+
+button.remove-task:hover {
+  background-color: #c82333;
+}
+

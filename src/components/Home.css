@@ -1,0 +1,78 @@
+/* Main container for the page */
+.home-container {
+    display: flex;
+    flex-direction: column; /* Arrange elements vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: flex-start; /* Align content to the left */
+    padding: 40px;
+    background-color: #f9fafb;
+    max-width: 1200px; /* Limit the container width */
+    margin-left: 20px; /* Align the container to the left side */
+    width: 100%; /* Allow the container to take up the full width */
+}
+
+/* Style for the main title (Role-Based Access Control UI) */
+.home-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #333;
+    text-align: left; /* Align to the left */
+    font-family: 'Roboto', sans-serif; /* Custom font for title */
+    margin-bottom: 20px;
+    width: 100%; /* Take up full width */
+}
+
+/* Style for the descriptions (both h2 elements) */
+.home-description {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: left; /* Align text to the left */
+    line-height: 1.8;
+    width: 100%; /* Take up full width */
+    font-family: 'Open Sans', sans-serif; /* Custom font for descriptions */
+    margin-bottom: 20px;
+}
+
+/* Style for the additional description under the h2 elements */
+.home-container h2 {
+    font-size: 1.2rem;
+    color: #444;
+    text-align: left; /* Left align */
+    width: 100%; /* Ensure text takes up the full width */
+    line-height: 1.6;
+    font-family: 'Open Sans', sans-serif; /* Font for the body text */
+    margin-bottom: 20px;
+}
+
+/* Style for the paragraph describing RBAC (e.g. "How Role-Based Access Control Works") */
+p {
+    font-size: 1.2rem;
+    color: #333;
+    font-family: 'Open Sans', sans-serif; /* Font for paragraphs */
+    font-weight: 600;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 100%; /* Ensure paragraph takes full width */
+    text-align: left; /* Align paragraph text to the left */
+}
+
+/* Style for the list items (What RBAC defines) */
+ul {
+    padding-left: 20px; /* Add padding to the left of the list */
+    width: 100%; /* Make the list take full width */
+    list-style-type: disc; /* Use bullet points for the list */
+}
+
+li {
+    font-size: 1.1rem;
+    color: #444;
+    font-family: 'Open Sans', sans-serif; /* Font for list items */
+    line-height: 1.8;
+    margin-bottom: 10px; /* Add spacing between list items */
+    width: 100%; /* Make list items take full width */
+    text-align: left; /* Ensure text aligns to the left */
+}
+
+/* Optional: Custom font loading */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@700&display=swap');

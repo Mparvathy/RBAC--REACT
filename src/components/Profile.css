@@ -1,0 +1,121 @@
+/* Profile Container Styling */
+.profile-container {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f8ff; /* Light background */
+}
+
+.profile-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 20px; /* Increased border-radius for curved card effect */
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  margin: 10px;
+  text-align: center;
+  background: linear-gradient(135deg, #f4f7fc, #e1ecf4);
+}
+
+/* Desktop Style (Primary Color) */
+.profile-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #003366; /* Dark blue color */
+}
+
+.profile-details {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  color: #ff6600; /* Vibrant orange color for labels */
+}
+
+/* Button Styling */
+button {
+  padding: 10px 20px;
+  background-color: #007BFF; /* Primary Blue */
+  color: white;
+  border: none;
+  border-radius: 20px; /* Curved button to match the card */
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker Blue for hover */
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .profile-card {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .profile-title {
+    font-size: 1.8rem;
+    color: #008080; /* Teal color for tablets */
+  }
+
+  .profile-details p {
+    font-size: 0.9rem;
+    color: #444; /* Slightly lighter text for tablets */
+  }
+
+  .profile-details strong {
+    color: #ff6347; /* Tomato color for labels */
+  }
+
+  button {
+    background-color: #28a745; /* Green button for tablets */
+  }
+
+  button:hover {
+    background-color: #218838; /* Darker Green for hover */
+  }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+  .profile-card {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .profile-title {
+    font-size: 1.5rem;
+    color: #ff4500; /* Vibrant orange for mobile */
+  }
+
+  .profile-details p {
+    font-size: 0.85rem;
+    color: #555;
+  }
+
+  .profile-details strong {
+    color: #ff1493; /* Deep pink for labels */
+  }
+
+  button {
+    background-color: #ff6347; /* Tomato button for mobile */
+    width: 100%;
+    padding: 12px;
+  }
+
+  button:hover {
+    background-color: #e53e3e; /* Darker Tomato for hover */
+  }
+}
